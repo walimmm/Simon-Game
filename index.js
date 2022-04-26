@@ -4,7 +4,7 @@ var colors = ["red", "yellow", "blue", "green"];
 var started = false;
 var level = 1;
 $(".btn").hide();
-$(document).click(function() {
+$(".new").click(function() {
   if (!started) {
     $("#level-title").text("Level " + level);
     started = true;
@@ -28,7 +28,7 @@ $(".btn").click(function () {
 
 function next() {
   userPattern = [];
-  
+
   $("#level-title").text("Level " + level);
   var randomNumber = Math.floor(Math.random() * 4);
   var randomColor = colors[randomNumber];
