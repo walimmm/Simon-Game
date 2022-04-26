@@ -2,7 +2,7 @@ var gamePattern = [];
 var userPattern = [];
 var colors = ["red", "yellow", "blue", "green"];
 var started = false;
-var level = 0;
+var level = 1;
 $(".btn").hide();
 $(document).click(function() {
   if (!started) {
@@ -28,7 +28,7 @@ $(".btn").click(function () {
 
 function next() {
   userPattern = [];
-  level++;
+  
   $("#level-title").text("Level " + level);
   var randomNumber = Math.floor(Math.random() * 4);
   var randomColor = colors[randomNumber];
@@ -36,6 +36,7 @@ function next() {
 
   $("#" + randomColor).fadeIn(100).fadeOut(100).fadeIn(100);
   playSound(randomColor);
+  level++;
 }
 
 
