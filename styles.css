@@ -13,15 +13,15 @@ body {
 .container {
   display: block;
   width: 100%;
-  margin: auto;
+  margin: 100px auto;
 
 }
 
 .btn {
   margin: 25px;
   display: inline-block;
-  height: 100px;
-  width: 100px;
+  height: 150px;
+  width: 150px;
   border: 10px solid black;
   border-radius: 20%;
 }
