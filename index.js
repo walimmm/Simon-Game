@@ -4,7 +4,7 @@ var colors = ["red", "yellow", "blue", "green"];
 var started = false;
 var level = 0;
 $(".btn").hide();
-$(document).keypress(function() {
+$(document).click(function() {
   if (!started) {
     $("#level-title").text("Level " + level);
     started = true;
@@ -13,7 +13,7 @@ $(document).keypress(function() {
   }, 200);
     setTimeout(function () {
       next();
-    }, 500); 
+    }, 500);
   }
 });
 
